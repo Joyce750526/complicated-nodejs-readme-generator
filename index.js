@@ -4,23 +4,16 @@ const fs = require("fs");
 const path = require("path");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// TODO: Create an array of questions for user input
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  fs.writeFile(fileName, data, (err) =>
-    err ? console.error(err) : console.log('Success!')
-  );
-}
 
 // TODO: Create a function to initialize app
+// TODO: Create an array of questions for user input
 function init() {
   inquirer
     .prompt([
       {
         type: "input",
         name: "name",
-        message: "What is the name of your project titleNode?",
+        message: "What is the name of your project title?",
       },
       {
         type: "input",
@@ -45,12 +38,13 @@ function init() {
       {
         type: "input",
         name: "test",
-        message: "What is the test instructions?",
+        message: "What is the testing instructions?",
       },
       {
-        type: "input",
+        type: "list",
         name: "license",
         message: "What is the license of your project?",
+        choices: ["MIT", "APACHE 2.0", "BSD 3", "None"],
       },
       {
         type: "input",
@@ -65,9 +59,15 @@ function init() {
     ])
     .then((response) => {
       console.log(response);
-      writeToFile("ReadMe1.md", generateMarkdown(response));
-    }
-    );
+      writeToFile("/dist/ReadMe1.md", generateMarkdown(response));
+    });
+}
+
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) =>
+    err ? console.error(err) : console.log("Success!")
+  );
 }
 
 // Function call to initialize app
