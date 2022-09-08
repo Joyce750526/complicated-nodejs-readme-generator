@@ -1,9 +1,9 @@
-# Complicated Node.js ReadMe Generator
-  ![License:MIT](https://img.shields.io/badge/License-MIT-green)(https://opensource.org/licenses/MIT)
+# readme generator
+  ![License:MIT](https://img.shields.io/badge/License-MIT-green)
 
 
 ## Description 
-Generator
+n
 
 ## Table of Contents
 * [Installation](#installation)
@@ -14,16 +14,16 @@ Generator
 * [Questions](#questions)
 
 ## Installation
-none 
+ 
 
 ## Usage
-Generator
+
 
 ## Contribution
-none
+
 
 ## Test
-none
+
 
 ## License 
 undefined 
