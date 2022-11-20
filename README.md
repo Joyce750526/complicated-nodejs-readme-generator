@@ -21,7 +21,7 @@ The main purpose is to save more time for the team on the project.
 ## Demo Video: 
 ![ReadMe Generator Walkthrough Video can be found here.](./video/ReadMe-Generator-Walkthrough.gif)
 
----
+---`
 
 
 ## Required to submit the following URL for review:
